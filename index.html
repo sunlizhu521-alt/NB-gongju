@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>付款申请单整理 - NB工具</title>
+  <meta name="description" content="在本机浏览器按付款主体整理付款申请明细，生成可编辑 Word 和 A4 横向 PDF。" />
+  <link rel="stylesheet" href="styles-merge14.css" />
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark">NB</span>
+      <div>
+        <strong>NB工具</strong>
+        <span>本地文件处理工具，开发人孙立柱</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="icon-button" id="themeToggle" title="切换主题" aria-label="切换主题"><span class="theme-icon">◐</span></button>
+    </div>
+  </header>
+  <main class="shell">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <span class="sidebar-label">工具</span>
+        <nav class="tool-list" aria-label="工具导航">
+          <a class="tool-tab active" href="#toolPanel" aria-current="page" style="text-decoration:none">
+            <span class="tab-icon">付</span><span class="tab-text">付款申请单整理（可用）</span>
+          </a>
+        </nav>
+      </div>
+      <div class="sidebar-note">
+        <strong>隐私模式</strong>
+        <span>文件仅在本机浏览器处理，不上传服务器；支持本机文件缓存。</span>
+      </div>
+    </aside>
+    <section class="workspace" aria-labelledby="toolTitle">
+      <div class="workspace-header">
+        <div>
+          <p class="eyebrow">付款申请工具</p>
+          <h1 id="toolTitle">付款申请单整理</h1>
+          <p>按付款主体整理明细，每主体一页，导出 Word 和 PDF。</p>
+        </div>
+        <div class="status-strip"><span>本地处理</span><span>每主体一页</span></div>
+      </div>
+      <div class="tool-panel" id="toolPanel"></div>
+      <noscript>请启用浏览器 JavaScript 后使用付款申请单整理。</noscript>
+    </section>
+  </main>
+  <script src="vendor/xlsx.full.min.js"></script>
+  <script src="vendor/jszip.min.js"></script>
+  <script src="vendor/pdf-lib.min.js"></script>
+  <script src="payment-cache.js"></script>
+  <script src="payment-core.js"></script>
+  <script src="payment-document.js"></script>
+  <script src="payment-tool.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
