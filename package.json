@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node --test tests/payment-core.test.cjs",
     "check": "node --check app.js && node --check payment-cache.js && node --check payment-core.js && node --check payment-document.js && node --check payment-tool.js",
-    "test:browser": "node tests/payment-browser.cjs"
+    "test:browser": "node tests/payment-browser.cjs",
+    "test:layout-browser": "node tests/payment-layout-browser.cjs"
   }
 }
